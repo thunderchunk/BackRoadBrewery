@@ -1,0 +1,55 @@
+.placePickerContainer{
+  padding: 10px 0 0 0;
+}
+
+.locationSelector{
+  margin: 10px auto;
+  text-align: center;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  background: $wht;
+  &:hover{
+    background: darkgrey;
+  }
+}
+
+.goToLocation{
+  height: 20px;
+  width: 100px;
+  background: $wht;
+  margin: 1px auto;
+  padding: 2px 0 0 0;
+  border-radius: 5px;
+  &:hover{
+    background: darkgrey;
+  }
+}
+
+#map {
+ height: 400px;
+ width: 100%;
+ background: $wht;
+}
+
+
+.infoBit{
+  min-width: 300px;
+  min-height: 120px;
+  padding: 20px 0 0 0;
+
+
+}
+
+.mapKeyContainer{
+  margin: 10px 0 0 0;
+}
+
+.addressMargin{
+  margin: 5px 0 0 0;
+}
+
+.contactContainer{
+  margin: 0 auto;
+  background: green;
+}

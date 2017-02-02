@@ -1,0 +1,57 @@
+.navBar{
+  width: 100%;
+  height: 100px;
+  background: $blk;
+  position: absolute;
+  z-index: 2;
+  @media(max-width: 840px){
+    background: none;
+  }
+  
+}
+
+.navItem{
+  opacity: .8;
+  &:hover{
+    cursor: pointer;
+    opacity: 1;
+    text-decoration: underline;
+  }
+}
+
+.navContainer{
+  padding: 50px 0 0 0;
+  @media(max-width: 840px){
+    display: none;
+  }
+}
+
+.navLogoSpacer{
+  
+}
+.logoContainer{
+  position: absolute;
+  top: 30px;
+  left: 50%;
+transform: translate(-50%, 0);
+z-index: 4;
+@media(max-width: 840px){
+  display: none;
+}
+}
+
+.logo{
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+
+// little nav
+
+.littleNavContainer{
+  @media(min-width: 840px){
+    display: none;
+  }
+}
+
