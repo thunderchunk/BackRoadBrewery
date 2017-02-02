@@ -5,6 +5,10 @@ angular.module('brb')
             templateUrl: './app/views/nav/nav.html',
             link: function(scope, element, attributes) {
               
+              $("#smallLogo").on("click", function() {
+                  $(".littleNavHolder").show(".littleNavHolder");
+                  $(this).hide("#smallLogo");
+            });
 
             }
 };

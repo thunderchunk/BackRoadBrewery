@@ -29,6 +29,7 @@
 .navLogoSpacer{
   
 }
+
 .logoContainer{
   position: absolute;
   top: 30px;
@@ -53,5 +54,28 @@ z-index: 4;
   @media(min-width: 840px){
     display: none;
   }
+}
+
+.littleNavHolder{
+  width: 100%;
+  display: none;
+}
+
+.littleNavHolder2{
+  width: 100%;
+  display:block;
+}
+
+#smallLogo{
+padding: 20px 0 0 20px;
+}
+
+//effects classes
+
+.rotate-180 {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
 }
 

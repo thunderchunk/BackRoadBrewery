@@ -105,7 +105,9 @@ h6{
 }
 
 p, label, select{
+  font-size: .9em;
   font-family: $paragraphFont;
+  line-height: 120%;
 }
 
 a{
@@ -203,6 +205,9 @@ a{
 
 .navSpacer{
   height: 120px;
+  @media(max-width: 840px){
+    height: 60px;
+  }
 }
 
 

@@ -79,7 +79,9 @@ h6 {
   font-size: 1em; }
 
 p, label, select {
-  font-family: "Roboto", sans-serif; }
+  font-size: .9em;
+  font-family: "Roboto", sans-serif;
+  line-height: 120%; }
 
 a {
   color: peru; }
@@ -153,6 +155,9 @@ a {
 
 .navSpacer {
   height: 120px; }
+  @media (max-width: 840px) {
+    .navSpacer {
+      height: 60px; } }
 
 .portrait {
   float: left;
@@ -293,3 +298,20 @@ a {
 @media (min-width: 840px) {
   .littleNavContainer {
     display: none; } }
+
+.littleNavHolder {
+  width: 100%;
+  display: none; }
+
+.littleNavHolder2 {
+  width: 100%;
+  display: block; }
+
+#smallLogo {
+  padding: 20px 0 0 20px; }
+
+.rotate-180 {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg); }
