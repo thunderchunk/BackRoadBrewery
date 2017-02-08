@@ -1,5 +1,7 @@
 .homeLogo{
   margin: 30px auto;
+  width: 227px;
+  height: 200px;
 }
 
 .answerContainer{
@@ -14,4 +16,9 @@
     opacity: 1;
     text-decoration: underline;
   }
+}
+
+.homeContainer{
+  position: relative;
+  width: 100%;
 }

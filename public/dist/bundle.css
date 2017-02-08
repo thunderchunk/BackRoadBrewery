@@ -206,20 +206,10 @@ a {
   width: 90%;
   margin: 10px auto; }
 
-.breweryPic {
-  height: 400px;
-  width: 600px;
-  background: #171300; }
-
-.logoSpacer {
-  height: 75px; }
-
-.breweryContainer {
-  width: 70%;
-  margin: 0 auto; }
-
 .homeLogo {
-  margin: 30px auto; }
+  margin: 30px auto;
+  width: 227px;
+  height: 200px; }
 
 .answerContainer {
   width: 200px;
@@ -231,6 +221,22 @@ a {
     cursor: pointer;
     opacity: 1;
     text-decoration: underline; }
+
+.homeContainer {
+  position: relative;
+  width: 100%; }
+
+.breweryPic {
+  height: 400px;
+  width: 600px;
+  background: #171300; }
+
+.logoSpacer {
+  height: 75px; }
+
+.breweryContainer {
+  width: 70%;
+  margin: 0 auto; }
 
 .placePickerContainer {
   padding: 10px 0 0 0; }
