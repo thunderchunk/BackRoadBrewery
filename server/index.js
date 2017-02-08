@@ -41,7 +41,7 @@ app.use(express.static(__dirname+'./../public'));
 
 // VARIABLES
 // ============================================================
-var port = 3000;
+var port = 80;
 
 
 // LISTEN
