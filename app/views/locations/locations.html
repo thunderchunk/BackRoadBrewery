@@ -23,17 +23,6 @@
     <div class="row ">
       
       <div class="infoBit col-md-4">
-          <h4 class="centerTxt whtTxt">Back Road Brewery</h4>
-          <p class="centerTxt whtTxt addressMargin">140 N. 1st St <br>Carlisle, IA 50047</p>
-      </div>
-      
-      <div class="infoBit col-md-4">
-          <h4 class="centerTxt whtTxt">Phone: 123-456-7890</h4>
-          <p class="addressMargin whtTxt centerTxt">E-Mail: backroadbeer@gmail.com</p>
-
-      </div>
-      
-      <div class="infoBit col-md-4">
           <form name="placePicker" class="flexColumn flexCenter">
               <label class="pickerLabel centerTxt whtTxt" for="placePicker">Find our beer at:</label>
               <select class="locationSelector" name="placePick" ng-options="option.name for option in thislist.availableOptions track by option.id" ng-model="currentL">
@@ -45,6 +34,19 @@
           </form>
 
       </div>
+      
+      <div class="infoBit col-md-4">
+          <h4 class="centerTxt whtTxt">{{currentL.name || "Back Road Brewery"}}</h4>
+          <p class="centerTxt whtTxt addressMargin">{{currentL.address1 || "140 N. 1st St "}}<br>{{currentL.address2 || "Carlisle, IA 50047"}}</p>
+      </div>
+      
+      <div class="infoBit col-md-4">
+          <h4 class="centerTxt whtTxt">Phone: 123-456-7890</h4>
+          <p class="addressMargin whtTxt centerTxt">E-Mail: backroadbeer@gmail.com</p>
+
+      </div>
+      
+
       
     </div>
   </div>
