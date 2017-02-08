@@ -122,16 +122,6 @@ angular.module("brb").controller("about", ["$scope", function($scope) {
 
 // INITILIZE CONTROLLER
 // ============================================================
-angular.module("brb").controller("beers", ["$scope", function($scope) {
-  // VARIABLES
-  // ============================================================
-  $scope.test = "beers test"
-  // FUNCTIONS
-  // ============================================================
-}]);
-
-// INITILIZE CONTROLLER
-// ============================================================
 angular.module("brb").controller("brewery", ["$scope", function($scope) {
   // VARIABLES
   // ============================================================
@@ -140,6 +130,16 @@ angular.module("brb").controller("brewery", ["$scope", function($scope) {
   // ============================================================
   
 
+}]);
+
+// INITILIZE CONTROLLER
+// ============================================================
+angular.module("brb").controller("beers", ["$scope", function($scope) {
+  // VARIABLES
+  // ============================================================
+  $scope.test = "beers test"
+  // FUNCTIONS
+  // ============================================================
 }]);
 
 // INITILIZE CONTROLLER
