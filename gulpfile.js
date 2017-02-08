@@ -6,21 +6,29 @@ var annotate = require("gulp-ng-annotate");
 var sassimport = require("gulp-sass");
 var watch = require('gulp-watch');
 var babel = require('gulp-babel');
+var nodemon = require('gulp-nodemon')
 
 //locate paths
 
 var paths = {
-   jsSource: ['./app/**/*.js'],
-   sassSource: ['./app/**/*.scss'],
+   jsSource: ['./public/app/**/*.js'],
+   sassSource: ['./public/app/**/*.scss'],
+   server: ['server/index.js']
 };
 
+// start nodemon  // uncomment when server setup 
+gulp.task('serve', function() {
+    nodemon({
+        'script': paths.server[0]
+    });
+});
 
 //define bundle
 gulp.task('scss', function() {
    gulp.src(paths.sassSource)
        .pipe(concat('bundle.css'))
        .pipe(sassimport())
-       .pipe(gulp.dest('./dist'));
+       .pipe(gulp.dest('./public/dist'));
 });
 
 gulp.task('js', function() {
@@ -28,7 +36,7 @@ gulp.task('js', function() {
       // .pipe(babel()) //Uncomment if using ES6
        .pipe(annotate())
        .pipe(concat('bundle.js'))
-       .pipe(gulp.dest('./dist'));
+       .pipe(gulp.dest('./public/dist'));
 });
 
 //make it watch for changes
@@ -38,4 +46,4 @@ gulp.task('watch', function() {
    gulp.watch(paths.sassSource, ['scss']);
 });
 
-gulp.task('default', ['js', 'scss', 'watch'  ]); 
+gulp.task('default', ['js', 'scss', 'watch' , 'serve' ]);  //uncomment serve when ready for nodemon
