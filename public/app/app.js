@@ -31,6 +31,11 @@ var app = angular.module("brb", ["ui.router"] )
         templateUrl: './app/views/brewery/brewery.html',
         controller: 'brewery'
       })
+      .state('secretLocations', {
+        url: '/secretLocations',
+        templateUrl: './app/views/secretLocations/secretLocations.html',
+        controller: 'secretLocations'
+      })
 
 
 

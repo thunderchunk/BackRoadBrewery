@@ -1,7 +1,11 @@
 .portrait {
     float: left;
-    margin: 0 10px 10px 0;
-       box-shadow: 5px 5px 20px $blk;
+    margin: 0 20px 10px 0;
+    box-shadow: 5px 5px 20px $blk;
+    @media(max-width: 480px){
+      float: none;
+      margin: 0 auto;
+    }  
 }
 
 .unalignedPortrait {
@@ -19,7 +23,8 @@
 .portraitRight {
     float: right;
     margin: 10px 10px 10px 0;
-       box-shadow: 5px 5px 20px $blk;
+    box-shadow: 5px 5px 20px $blk;
+
 }
 
 .storyHolder{

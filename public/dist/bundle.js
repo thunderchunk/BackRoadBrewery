@@ -31,6 +31,11 @@ var app = angular.module("brb", ["ui.router"] )
         templateUrl: './app/views/brewery/brewery.html',
         controller: 'brewery'
       })
+      .state('secretLocations', {
+        url: '/secretLocations',
+        templateUrl: './app/views/secretLocations/secretLocations.html',
+        controller: 'secretLocations'
+      })
 
 
 
@@ -231,3 +236,23 @@ angular.module('brb')
 };
 
 });
+// INITILIZE CONTROLLER
+// ============================================================
+angular.module("brb").controller("secretLocations", ["$scope", "brbService", function($scope, brbService) {
+  // VARIABLES
+  
+  // pulls in data from service
+  $scope.thislist = brbService.locationList;
+  // makes a new variable to repopulate the map coordinates
+  $scope.currentL = null;
+  
+
+  
+  
+
+  
+  // ============================================================
+  $scope.test = "locations test"
+  // FUNCTIONS
+  // ============================================================
+}]);

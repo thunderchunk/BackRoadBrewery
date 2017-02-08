@@ -60,8 +60,9 @@ z-index: 4;
 }
 
 .littleNavHolder{
-  width: 100%;
+  padding: 10px;
   display: none;
+  background: $blk;
   @media(max-width: 840px){
     margin: 20px 0 0 20px;
   }
@@ -70,12 +71,14 @@ z-index: 4;
 
 #smallLogo{
 margin: 20px 0 0 20px;
-  background: $blk;
-  border-radius: 50px;
+
 }
 
-.smallLogoHolder{
-
+.burgerBar{
+  margin: 0 0 10px 0;
+  height: 5px;
+  width: 35px;
+  background: $wht;
 }
 
 
