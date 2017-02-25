@@ -159,17 +159,6 @@ a {
     .navSpacer {
       height: 0px; } }
 
-.beerLabelContainer {
-  margin: 0 auto;
-  padding: 100px 0 20px 0; }
-
-.beerLabel {
-  box-shadow: 5px 5px 20px #171300; }
-
-.beerParagraph {
-  width: 90%;
-  margin: 10px auto; }
-
 .portrait {
   float: left;
   margin: 0 20px 10px 0;
@@ -209,6 +198,24 @@ a {
 
 .mainPrgph {
   line-height: 150%; }
+
+.beerLabelContainer {
+  margin: 0 auto;
+  padding: 100px 0 20px 0;
+  position: relative;
+  height: 450px; }
+
+.beerLabel {
+  box-shadow: 5px 5px 20px #171300;
+  width: 349px;
+  height: 307px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.beerParagraph {
+  width: 90%;
+  margin: 10px auto; }
 
 .breweryPic {
   height: 400px;

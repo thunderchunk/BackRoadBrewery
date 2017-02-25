@@ -1,10 +1,18 @@
 .beerLabelContainer{
   margin: 0 auto;
   padding: 100px 0 20px 0;
+
+  position: relative;
+  height: 450px;
 }
 
 .beerLabel{
    box-shadow: 5px 5px 20px $blk;
+   width: 349px;
+   height: 307px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
 }
 
 .beerParagraph{
